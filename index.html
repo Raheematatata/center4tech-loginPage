@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: tahoma;
+    }
+    #border{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(228, 228, 228);
+        text-align: center;
+        margin-left: 500px;
+        margin-top: 50px;
+    }
+    img{
+        margin-top: 32px;
+    }
+    input{
+        width: 250px;
+        padding: 8px;
+        display: block;
+        border: none;
+        margin-top: 20px;
+        margin-left:16px;
+        outline: none;
+        border-radius: 20px;
+    }
+    #login{
+        width: 254px;
+        padding: 8px;
+        background-color: rgb(104, 104, 240);
+        margin-top: 20px;
+        margin-left: 18px;
+        color: white;
+        font-size: 12px;
+        border-radius: 20px;
+
+    }
+    p{
+        font-size: 11px;
+        color: rgb(29, 29, 102);
+    }
+    #border span{
+        color:  rgb(29, 29, 102);
+    }
+    #border span p{
+        color:   rgb(29, 29, 102);
+        font-size: 14px;
+        display: inline;
+
+    }
+    #signup{
+        width: 268px;
+        padding: 16px;
+        background-color: rgb(228, 228, 228);
+        text-align: center;
+        margin-left: 500px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    #signup  a{
+        transform-style: none;
+       
+    }
+    #login:hover{
+        background-color: rgb(37, 40, 212);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="border">
+            <img src="loading-logo.png" alt="" srcset="">
+            <input type="text" placeholder="Phone number,Username or Email" id="email">
+            <input type="text" placeholder="Password" id="password">
+            <div id="login" onclick="login()">Login</div>
+            <p>OR</p>
+            <a href="www.facebook.com">
+                <span class="fa fa-facebook-square">
+                    <p>Login with facebook</p>
+                </span>
+            </a> 
+            <p>Forgot password?</p>
+        </div>
+        <div id="signup">
+            don't have an account? <a href="signup-page.html">Signup</a>
+        </div>
+    </div>
+</body>
+<script>
+  function login(){
+      let email = document.getElementById("email").innerHTML;
+      let password = document.getElementById("password").innerHTML
+      if(email == "raheemat3@gmail.com" ){
+        document.getElementById("login").addEventListener("click", function(){
+            alert("hello world");
+        },false)
+    }else{
+        document.getElementById("login").addEventListener("click",function(){
+            alert("you are not logged in");
+        },false)
+            
+        }
+        
+    }
+
+  login();
+</script>
+</html>
